@@ -13,4 +13,7 @@ dc(()=>{
     cl(download, ()=>{
         downloadA.click()
     })
+
+
+    help()
 })

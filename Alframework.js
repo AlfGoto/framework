@@ -1,13 +1,21 @@
+function help(){
+    console.log("dc(FUNC) = document.addEventListener('DOMContentLoaded', FUNC)")
+    console.log("cl(DOM, FUNCTION) = DOM.addEventListener('click', FUNCTION)\nch(DOM, FUNCTION) = DOM.addEventListener('change', FUNCTION)")
+    console.log("gid() = document.getElementById\ngclass() = document.getElementsByClassName\ngtag() = document.getElementsByTagName\ngquery() = document.querySelector\ngqall() = document.querySelectorAll")
+    console.log("c() = console.log")
+}
+
 
 
 function dc(arg){document.addEventListener('DOMContentLoaded', arg)}
 
-function cl(dom, func){
-    dom.addEventListener('click', func)
-}
+function cl(dom, func){dom.addEventListener('click', func)}
+function ch(dom, func){dom.addEventListener('change', func)}
 
 function gid(arg){return document.getElementById(arg)}
+function gclass(arg){return document.getElementsByClassName(arg)}
+function gtag(arg){return document.getElementsByTagName(arg)}
+function gquery(arg){return document.querySelector(arg)}
+function gqall(arg){return document.querySelectorAll(arg)}
 
-function c(arg){
-    console.log(arg)
-}
+function c(arg){console.log(arg)}
