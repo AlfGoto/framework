@@ -4,6 +4,7 @@ function help(){
     console.log("gid() = document.getElementById\ngclass() = document.getElementsByClassName\ngtag() = document.getElementsByTagName\ngquery() = document.querySelector\ngqall() = document.querySelectorAll")
     console.log("c() = console.log")
     console.log("cssvar(name, arg) = change css variable (that goes by name) value")
+    console.log("cr(TYPE, PARENT) = return an new element (of TYPE) that is nested inside a parent")
 }
 
 
@@ -22,3 +23,7 @@ function gqall(arg){return document.querySelectorAll(arg)}
 function c(arg){console.log(arg)}
 
 function cssvar(name, arg){document.documentElement.style.setProperty(name, arg)}
+
+function cr(type, dom){
+    return dom.appendChild(document.createElement(type))
+}
