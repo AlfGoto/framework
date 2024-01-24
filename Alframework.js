@@ -3,6 +3,7 @@ function help(){
     console.log("cl(DOM, FUNCTION) = DOM.addEventListener('click', FUNCTION)\nch(DOM, FUNCTION) = DOM.addEventListener('change', FUNCTION)")
     console.log("gid() = document.getElementById\ngclass() = document.getElementsByClassName\ngtag() = document.getElementsByTagName\ngquery() = document.querySelector\ngqall() = document.querySelectorAll")
     console.log("c() = console.log")
+    console.log("CSSvar(name, arg) = change css variable (that goes by name) value")
 }
 
 
@@ -19,3 +20,5 @@ function gquery(arg){return document.querySelector(arg)}
 function gqall(arg){return document.querySelectorAll(arg)}
 
 function c(arg){console.log(arg)}
+
+function cssvar(name, arg){document.documentElement.style.setProperty(name, arg)}
