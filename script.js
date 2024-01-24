@@ -6,7 +6,7 @@ dc(()=>{
 
 
     cl(copy, ()=>{
-        navigator.clipboard.writeText('copied');
+        navigator.clipboard.writeText("<script src='https://alframework.netlify.app/alframework.js'></script");
         alert('link copied')
     })
 
