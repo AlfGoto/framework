@@ -1,6 +1,7 @@
 dc(()=>{
     let copy = gid('copy')
     let download = gid('download')
+    let downloadA = gid('downloadA')
     
 
 
@@ -10,6 +11,6 @@ dc(()=>{
     })
 
     cl(download, ()=>{
-
+        downloadA.click()
     })
 })
