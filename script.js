@@ -6,5 +6,10 @@ dc(()=>{
 
     cl(copy, ()=>{
         navigator.clipboard.writeText('copied');
+        alert('link copied')
+    })
+
+    cl(download, ()=>{
+
     })
 })
