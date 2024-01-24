@@ -5,6 +5,6 @@ dc(()=>{
 
 
     cl(copy, ()=>{
-        navigator.clipboard.writeText(copyText.value);
+        navigator.clipboard.writeText('copied');
     })
 })
