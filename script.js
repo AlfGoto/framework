@@ -2,7 +2,6 @@ dc(()=>{
     let copy = gid('copy')
     let download = gid('download')
     let downloadA = gid('downloadA')
-    
 
 
     cl(copy, ()=>{
@@ -15,5 +14,5 @@ dc(()=>{
     })
 
 
-    help()
+    alframeworkhelp()
 })
