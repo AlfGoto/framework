@@ -1,17 +1,175 @@
-body{
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    .contentLIST{
+    .contentLIST {
         display: flex;
         align-items: center;
         flex-direction: column;
 
-        button{
+        button {
             height: 10vw;
             width: 30vw;
             font-size: 5vw;
         }
+    }
+
+    #logo {
+        user-select: none;
+        position: relative;
+        height: 15vh;
+        width: 65vh;
+        top: 30vh;
+        transition: top ease 1s;
+        /* border: #1EBBD7 solid 0.5vh; */
+        z-index: 10;
+
+        #h1DIV {
+            display: flex;
+            justify-content: center;
+            h1 {
+                color: #1EBBD7;
+                font-size: 10vh;
+                margin: 1vh;
+                padding: 1vh;
+                width: 70vh;
+                overflow: hidden;
+            }
+            h1.h1LogoANIMATION {
+                visibility: visible;
+                animation: h1LogoANIMATION linear 1s;
+            }
+        }
+        #evebetterP {
+            visibility: hidden;
+            overflow: hidden;
+            position: absolute;
+            width: 45vh;
+            top: 8vh;
+            left: 2vh;
+            padding: 0px 1vh;
+
+            p {
+                text-align: center;
+                position: relative;
+                white-space: nowrap;
+                background-color: white;
+                color: #1EBBD7;
+                font-size: 4vh;
+                z-index: 15;
+            }
+        }
+        #evebetterP.pANIMATION {
+            visibility: visible;
+            animation: pANIMATION 1s linear;
+        }
+
+        #logoBorder {
+            /* visibility: hidden; */
+            position: absolute;
+            top: 0px;
+            height: 15vh;
+            width: 65vh;
+            border: solid 0.5vh;
+            z-index: 14;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(to left, transparent, transparent);
+        }
+        #logoBorder.borderANIMATION {
+            animation: borderANIMATION linear 1s;
+            border-image-source: linear-gradient(to left, #1EBBD7, #1EBBD7);
+        }
+    }
+
+    #separator {
+        height: 100vh;
+        transition: height ease 1s;
+    }
+}
+@keyframes borderANIMATION {
+    0% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 0%);
+    }
+    5% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 20%);
+    }
+    10% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 40%);
+    }
+    15% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 60%);
+    }
+    20% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 80%);
+    }
+    25% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 100%);
+    }
+    30% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 120%);
+    }
+    35% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 140%);
+    }
+    40% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 160%);
+    }
+    45% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 180%);
+    }
+    50% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 200%);
+    }
+    55% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 220%);
+    }
+    60% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 240%);
+    }
+    65% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 260%);
+    }
+    70% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 270%);
+    }
+    75% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 280%);
+    }
+    80% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 290%);
+    }
+    85% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 300%);
+    }
+    90% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 310%);
+    }
+    95% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 320%);
+    }
+    100% {
+        border-image-source: linear-gradient(to right, #1EBBD7, transparent 330%);
+    }
+}
+@keyframes pANIMATION {
+    from {
+        width: 0vh;
+    }
+    to {
+        width: 45vh;
+    }
+}
+@keyframes h1LogoANIMATION {
+    from {
+        width: 0vh;
+    }
+    to {
+        width: 70vh;
     }
 }
