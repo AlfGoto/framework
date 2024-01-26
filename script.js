@@ -28,8 +28,5 @@ dc(() => {
 
 
 
-    // alframeworkhelp()
-
-    alfjax('ajax.php')
-
+    alframeworkhelp()
 })
