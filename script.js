@@ -15,7 +15,7 @@ dc(() => {
             setTimeout(() => { 
                 separator.style.height = '20vh'
                 logo.style.top = '10vh'
-            }, 1000)
+            }, 500)
         }, 1000)
     }, 1000)
 
