@@ -35,13 +35,13 @@ dc(() => {
 
     let alfjaxcopy = gid('alfjaxcopy')
     let alfjaxdownload = gid('alfjaxdownload')
-    let alfjaxdownloadA = gid('alfjaxdownloadA')
+    let downloadALFJAX = gid('downloadALFJAX')
     cl(alfjaxcopy, () => {
         navigator.clipboard.writeText("<script src='https://alframework.netlify.app/AlfJAX.js'></script>");
         addAnimateButton(alfjaxcopy)
     })
     cl(alfjaxdownload, () => {
-        alfjaxdownloadA.click()
+        downloadALFJAX.click()
         addAnimateButton(alfjaxdownload)
     })
 
