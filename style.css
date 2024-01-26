@@ -35,6 +35,7 @@ body {
 
             h3{
                 margin-top: 15%;
+                font-size: 2.8vh;
             }
 
             .buttonDIV {
@@ -45,8 +46,8 @@ body {
                 button {
                     background-color: var(--accent0);
                     color: var(--background0);
-                    height: 2vw;
-                    width: 6vw;
+                    height: 4.5vh;
+                    width: 13vh;
                     font-size: 1vw;
                     border: transparent solid 0.15vh;
                     border-radius: 1vh;
