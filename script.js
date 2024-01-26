@@ -39,15 +39,23 @@ dc(() => {
     let alfjaxcopy = gid('alfjaxcopy')
     let alfjaxdownload = gid('alfjaxdownload')
     let alfjaxdownloadA = gid('alfjaxdownloadA')
-
-
     cl(alfjaxcopy, () => {
         navigator.clipboard.writeText("<script src='https://alframework.netlify.app/AlfJAX.js'></script>");
         alert('link copied')
     })
-
     cl(alfjaxdownload, () => {
         alfjaxdownloadA.click()
+    })
+
+    let Shortercopy = gid('Shortercopy')
+    let Shorterdownload = gid('Shorterdownload')
+    let downloadSHORTER = gid('downloadSHORTER')
+    cl(Shortercopy, () => {
+        navigator.clipboard.writeText("<script src='https://alframework.netlify.app/Shorter.js'></script>");
+        alert('link copied')
+    })
+    cl(Shorterdownload, () => {
+        downloadSHORTER.click()
     })
 
 
