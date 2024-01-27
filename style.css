@@ -23,20 +23,20 @@ body {
 
         .contentLIST {
             position: relative;
-            height: 40vh;
-            width: 30vh;
-            margin: 1vh;
-            padding: 1vh;
+            height: 40svh;
+            width: 30svh;
+            margin: 1svh;
+            padding: 1svh;
             display: flex;
             align-items: center;
             flex-direction: column;
             background-color: var(--background1);
-            border-radius: 2.5vh;
+            border-radius: 2.5svh;
 
             .imgJavascript{
-                height: 12vh;
-                width: 12vh;
-                border-radius: 1vh;
+                height: 12svh;
+                width: 12svh;
+                border-radius: 1svh;
                 margin-top: 5%;
             }
 
@@ -44,8 +44,8 @@ body {
                 align-content: flex-start;
                 width: 100%;
                 margin-top: 10%;
-                font-size: 2.8vh;
-                margin-left: 2vh;
+                font-size: 2.8svh;
+                margin-left: 2svh;
             }
 
             .buttonDIV {
@@ -56,11 +56,11 @@ body {
                 button {
                     background-color: var(--accent0);
                     color: var(--background0);
-                    height: 4.5vh;
-                    width: 13vh;
-                    font-size: 2vh;
-                    border: transparent solid 0.15vh;
-                    border-radius: 1vh;
+                    height: 4.5svh;
+                    width: 13svh;
+                    font-size: 2svh;
+                    border: transparent solid 0.15svh;
+                    border-radius: 1svh;
                 }
                 button.buttonANIMATION {
                     animation: buttonANIMATION linear 0.5s;
@@ -70,8 +70,8 @@ body {
 
             p {
                 margin: 0px;
-                padding: 1vh;
-                font-size: 2vh;
+                padding: 1svh;
+                font-size: 2svh;
                 width: 100%;
                 height: 25%;
                 color: var(--txt);
@@ -82,11 +82,11 @@ body {
     #logo {
         user-select: none;
         position: relative;
-        height: 15vh;
-        width: 65vh;
-        top: 30vh;
+        height: 15svh;
+        width: 65svh;
+        top: 30svh;
         transition: top ease 1s;
-        /* border: var(--accent0) solid 0.5vh; */
+        /* border: var(--accent0) solid 0.5svh; */
         z-index: 10;
 
         #h1DIV {
@@ -94,10 +94,10 @@ body {
             justify-content: center;
             h1 {
                 color: var(--accent0);
-                font-size: 10vh;
-                margin: 1vh;
-                padding: 1vh;
-                width: 70vh;
+                font-size: 10svh;
+                margin: 1svh;
+                padding: 1svh;
+                width: 70svh;
                 overflow: hidden;
             }
             h1.h1LogoANIMATION {
@@ -109,10 +109,10 @@ body {
             visibility: hidden;
             overflow: hidden;
             position: absolute;
-            width: 45vh;
-            top: 8vh;
-            left: 2vh;
-            padding: 0px 1vh;
+            width: 45svh;
+            top: 8svh;
+            left: 2svh;
+            padding: 0px 1svh;
 
             p {
                 text-align: center;
@@ -120,7 +120,7 @@ body {
                 white-space: nowrap;
                 background-color: white;
                 color: var(--accent0);
-                font-size: 4vh;
+                font-size: 4svh;
                 z-index: 15;
             }
         }
@@ -133,9 +133,9 @@ body {
             /* visibility: hidden; */
             position: absolute;
             top: 0px;
-            height: 15vh;
-            width: 65vh;
-            border: solid 0.5vh;
+            height: 15svh;
+            width: 65svh;
+            border: solid 0.5svh;
             z-index: 14;
             border-image-slice: 1;
             border-image-source: linear-gradient(to left, transparent, transparent);
@@ -147,7 +147,7 @@ body {
     }
 
     #separator {
-        height: 100vh;
+        height: 100svh;
         transition: height ease 1s;
     }
 }
@@ -218,18 +218,18 @@ body {
 }
 @keyframes pANIMATION {
     from {
-        width: 0vh;
+        width: 0svh;
     }
     to {
-        width: 45vh;
+        width: 45svh;
     }
 }
 @keyframes h1LogoANIMATION {
     from {
-        width: 0vh;
+        width: 0svh;
     }
     to {
-        width: 70vh;
+        width: 70svh;
     }
 }
 @keyframes buttonANIMATION {
