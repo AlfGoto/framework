@@ -1,4 +1,3 @@
-#!/bin/bash 
 
 if [ -d roro ]; then 
     rm -r roro
